@@ -1,0 +1,72 @@
+.wd-modules,
+.wd-modules * {
+  border-radius: 0%;
+  border: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.wd-modules {
+  margin: 5px;
+}
+
+.wd-modules > li {
+  background-color: lightgray;
+  border: 1px solid gray !important;
+  border-left: none !important;
+}
+
+.wd-modules > li > div {
+  padding: 6px;
+  border-left: 1px solid gray !important;
+}
+
+.wd-modules > li > ul > li {
+  padding: 5px;
+  border-top: 1px solid gray !important;
+  border-left: 2px solid green;
+}
+
+.wd-modules > li {
+  margin-bottom: 20px;
+}
+
+.wd-modules-buttons-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.wd-modules-buttons, .wd-modules-buttons.module {
+  border-radius: 4px;
+  margin-left: 5px;
+  outline: 0cm;
+  border: 1px solid black;
+  background-color: lightgray;
+}
+
+
+.wd-modules-buttons.module {
+  background-color: red;
+  color: white;
+}
+select {
+  font-family: 'FontAwesome';
+}
+
+.fa.fa-ellipsis-v.list-module-name {
+  width: 50px;
+}
+
+.fa.fa-ellipsis-v.list-module-name-slides {
+  width: 10px;
+}
+
+.fa.fa-link.slides {
+  margin-right: 10px;
+  color: rgb(85, 177, 85);
+}
+
+.wd-modules-slides {
+  text-decoration: none;
+  color: red;
+}

@@ -63,21 +63,10 @@ select {
   color: red;
 }
 
-/* .wd-navigation {
-  padding-left: 0;
-  margin-left: 0;
-} */
-
 .wd-modules-header {
   display: flex;
   flex-direction: row;
   padding-top: 10px;
-}
-
-.module-header-center {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .navigation-menu {
@@ -85,7 +74,7 @@ select {
 }
 
 .wd-course-navigation-chevron {
-  padding-right: 5px;
+  padding-right: 10px;
 }
 
 .wd-kanbas-navigation-dropdown {
@@ -143,7 +132,3 @@ select {
 .wd-course-navigation-chevron {
   flex: 0 0 auto;
 }
-
-/* body {
-  overflow-x: hidden;
-} */

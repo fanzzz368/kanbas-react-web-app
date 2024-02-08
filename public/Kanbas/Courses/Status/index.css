@@ -22,8 +22,6 @@
 .status-coming-up {
     display: flex;
     flex-direction: row;
-    /* margin-bottom: 0px;
-    padding-bottom: 0px; */
 }
 
 .status-coming-up-events {

@@ -10,13 +10,14 @@
         <link href="/Kanbas/Courses/Modules/index.css" rel="stylesheet"/>
         <link href="/Kanbas/Dashboard/index.css" rel="stylesheet"/>
         <link href="/Kanbas/Courses/Status/index.css" rel="stylesheet"/>
+        <link href="/Kanbas/Courses/Home/index.css" rel="stylesheet"/>
     </head>
     <body>
         <div class="row">
-            <div class="d-none d-lg-block col-lg-1 wd-kanbas-navigation">
+            <div class="d-none d-lg-block col-lg-1 wd-kanbas-navigation-container">
                 <ul class="wd-kanbas-navigation">
                     <li>
-                      <a href="http://northeastern.edu">N</a>
+                      <a href="http://northeastern.edu" class="wd-northeastern-logo">N</a>
                     </li>
                     <li>
                       <a href="/Kanbas/Account/Profile/screen.html">
@@ -50,7 +51,7 @@
                     </li>
                     <li>
                       <a href="#">
-                        <i class="fa fa-clock-o"></i>History</a
+                        <i class="fa fa-clock-o"></i><br/>History</a
                       >
                     </li>
                     <li>
@@ -70,14 +71,9 @@
                     </li>
                   </ul>
             </div>
-
-
-
-
-
             <div class="d-lg-none row-lg-11 row-12 wd-header-column">
 
-                        <div class="col-lg-1 navigation-menu-container">
+                        <div class="col-1 navigation-menu-container">
                             <p class="d-inline-flex ">
                                 <a href="#kanbas-navigation-collapse" class="icon-trigger" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="fa fa-bars module-header navigation-menu">
                                     <i class="fa fa-bars module-header navigation-menu"></i>
@@ -85,11 +81,10 @@
                             </p>
                         </div>
 
-            <div class="d-lg-none col-lg-10 module-header-center">
-                <h6 class=" module-header modules-course-name-header">CS1234.31816.202430</h6> 
-                <h6 class="module-header modules-name-header">Modules</h6> 
+            <div class="col-md-10 module-header-center">
+                <h6 class="module-header modules-course-name-header">CS1234.31816.202430<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Modules</h6> 
             </div>
-                <div class="d-lg-none col-lg-1 wd-course-navigation-chevron"> 
+                <div class="col-1 wd-course-navigation-chevron"> 
                         <i class="fas fa-glasses module-header"></i>
                         <p class="d-inline-flex ">
                             <a href="#course-navigation-collapse" class="icon-trigger" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="course-navigation-collapse">
@@ -99,14 +94,6 @@
                 </div>
                 </div>
                 
-
-
-
-
-
-
-
-
                 <div class="collapse collapse-kanbas-navigation" id="kanbas-navigation-collapse">
                     <div class="card card-body-kanbas-navigation">
                         <ul class="wd-kanbas-navigation-dropdown">
@@ -207,13 +194,13 @@
                 </div>
                 <hr class="d-lg-none wd-modules-header-horizontal"/>
                 
-            <div class="col-12 col-lg-11 wd-modules-header">
+            <div class="col-12 col-lg-10 wd-modules-header">
                 <div class="d-none d-lg-block col-lg-2">
                 <ul class="wd-navigation">
-                    <li>
+                    <li class="wd-active">
                       <a href="/Kanbas/Courses/Home/screen.html">Home</a>
                     </li>
-                    <li class="wd-active">
+                    <li>
                       <a href="#">Modules</a>
                     </li>
                     <li>
@@ -248,7 +235,7 @@
                   </ul>
             </div>
 
-            <div class="col-12 col-lg-10 col-xl-8">
+            <div class="col-12 col-lg-9 col-xl-8">
                 <div class="wd-modules-buttons-container">
                     <button class="wd-buttons module-collapse-button">Collapse All</button>
                     <button class="wd-buttons module-progress-button">View Progress</button>

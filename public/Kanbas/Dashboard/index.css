@@ -1,0 +1,28 @@
+.col {
+    width: 310px;
+}
+
+.card-img-top {
+    max-height: 150px;
+}
+
+.card-title {
+    text-decoration: none;
+    color: navy;
+    font-weight: bold;
+}
+
+.card-text, .card-text-term {
+    color: gray;
+    font-weight: normal;
+}
+
+.card-text-term {
+    font-size: small;
+}
+
+.wd-kanbas-navigation-container {
+    background-color: black;
+    width: 92px;
+}
+

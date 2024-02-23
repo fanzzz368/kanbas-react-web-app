@@ -1,0 +1,88 @@
+.status-published-button {
+    margin-left: 0px;
+    background-color: rgb(155, 207, 155);
+    color: white;
+    border: rgb(155, 207, 160);;
+}
+
+.wd-status-buttons-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.wd-buttons {
+    margin-top: 3px;
+    max-height: 28px;
+}
+
+.status-todo {
+    font-weight: bold;
+}
+
+.status-coming-up {
+    display: flex;
+    flex-direction: column;
+    /* margin-bottom: 0px;
+    padding-bottom: 0px; */
+}
+
+.status-coming-up-events {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.status-coming-up-calendar {
+    text-decoration: none;
+    color: red;
+}
+.status-entire-event {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.fa.fa-calendar.status {
+    padding-right: 10px;
+    color: black;
+}
+
+.status-event-list {
+    margin-bottom: 20px;
+}
+.status-coming-up-event {
+    color: gray;
+    margin-bottom: 0px;
+}
+
+.status-coming-up-header {
+    font-weight: bold;
+    padding-right: 50px;
+}
+.title {
+    color: red;
+    margin-bottom: 0px;
+}
+
+.status-todo-date {
+    color: gray;
+}
+
+.status-todo-number {
+    padding-right: 10px;
+    color: red;
+}
+
+.status-more-text {
+    color: red;
+    font-size: small;
+}
+
+.status-exit {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.calendar {
+    color: red
+}

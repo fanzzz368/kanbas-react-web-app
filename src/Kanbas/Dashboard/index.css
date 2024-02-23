@@ -1,5 +1,5 @@
 .col {
-    width: 310px;
+    width: 350px;
 }
 
 .card-img-top {
@@ -14,8 +14,9 @@
 
 .card-text, .card-text-term {
     color: gray;
-    font-weight: normal;
+    text-decoration: none;
 }
 
 .card-text-term {
     font-size: small;
+}

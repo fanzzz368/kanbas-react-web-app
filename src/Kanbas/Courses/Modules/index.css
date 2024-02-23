@@ -1,0 +1,27 @@
+.wd-modules-buttons-container {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 10px;
+}
+
+select {
+  font-family: 'FontAwesome';
+}
+
+.wd-buttons {
+  border-radius: 4px;
+  margin-left: 5px;
+  outline: 0cm;
+  border: 1px solid black;
+  background-color: lightgray;
+}
+
+.module-module-button {
+  background-color: red;
+  color: white;
+}
+
+.module-list-container {
+  display: flex;
+  flex-direction: column;
+}

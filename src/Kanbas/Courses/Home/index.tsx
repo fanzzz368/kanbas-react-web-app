@@ -1,11 +1,13 @@
 import ModuleList from "../Modules/List";
-
+import Status from "./status";
+import './index.css';
 function Home() {
   return (
-    <div>
-      <h2>Home</h2>
-      <ModuleList />
-      <h2>Status</h2>
+    <div className="home">
+      <div className="col-12 col-lg-11 col-xl-10">
+        <ModuleList />
+      </div>
+      <Status />
     </div>
   );
 }

@@ -14,8 +14,8 @@
 
 .card-text, .card-text-term {
     color: gray;
+    font-weight: normal;
 }
 
 .card-text-term {
     font-size: small;
-}

@@ -9,12 +9,15 @@ function Assignments() {
     (assignment) => assignment.course === courseId);
   return (
     <>
-      <div className="wd-modules-buttons-container">
-        <button className="wd-buttons module-collapse-button">Collapse All</button>
-        <button className="wd-buttons module-progress-button">View Progress</button>
-        <select className="wd-buttons module-publish-button"><option> Publish All </option></select>
-        <button className="wd-buttons module-module-button">+ Module</button>
+      <div className="wd-modules-buttons-container assignments">
+        <div className="left-container">
+          <input placeholder="Search for Assignments " className="search-assignment"/>
+        </div>
+        <div>
+        <button className="wd-buttons group-button">+ Group</button>
+        <button className="wd-buttons assignment-button">+ Assignment</button>
         <button className="wd-buttons module-ellipsis-button">⋮</button>
+        </div>
       </div>
       <ul className="list-group wd-modules">
         <li className="list-group-item">

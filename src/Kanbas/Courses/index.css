@@ -24,11 +24,11 @@
     align-content: center;
 }
 
-.module-header-center {
+/* .module-header-center {
     display: flex;
     flex-direction: row;
     justify-content: center;
-}
+} */
 
 .wd-course-navigation-chevron {
     flex: 0 0 auto;

@@ -26,12 +26,14 @@ function Courses() {
         <div className="class-container">
 
             <div className="col-12 wd-header-column">
-                <div className="module-header-center">
+                <div>
                     <h1 className="course-header">
                         <div className="course-header-bar" onClick={() => setIsDropdownOpenKanbas(!isDropdownOpenKanbas)}>
                             <HiMiniBars3 />
                         </div>
                     </h1>
+                    </div>
+                <div>
                     <h1 className="course-header">
                         <div>
                         {course?.number} {course?.shortenTerm} <FaChevronRight className="chevron-right" /><Link className="header-home" to={getPageName()}> {getPageName()}</Link>

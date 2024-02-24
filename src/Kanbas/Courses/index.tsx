@@ -67,7 +67,7 @@ function Courses() {
 
             <hr />
             <div className="main-content">
-                <div className="d-none d-lg-block col-lg-2">
+                <div className="d-none d-md-block col-md-2">
                     <CourseNavigation />
                 </div>
                 <div

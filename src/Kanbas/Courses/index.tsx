@@ -9,7 +9,7 @@ import Assignments from "./Assignments";
 import "./index.css"
 import { FaChevronRight, FaGlasses, FaChevronDown } from "react-icons/fa";
 import KanbasNavigation from "../Navigation";
-function Courses() {
+function Courses({ courses }: { courses: any[]; }) {
     const { courseId } = useParams();
     const course = courses.find((course) => course._id === courseId);
     const location = useLocation();

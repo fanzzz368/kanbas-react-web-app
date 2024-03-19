@@ -8,9 +8,8 @@ export interface KanbasState {
 }
 const store = configureStore({
   reducer: {
-    modulesReducer
-  }
+    modulesReducer,
+  },
 });
-
 
 export default store;

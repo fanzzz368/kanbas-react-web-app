@@ -126,22 +126,22 @@
 }
 
 .assignment-link {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 .assignment-button {
-    background-color:red;
-    color: white;
+  background-color: red;
+  color: white;
 }
 
 .assignments {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .left-container {
-    display: flex;
-    align-items: center;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-container {
+  display: flex;
+  align-items: center;
+}

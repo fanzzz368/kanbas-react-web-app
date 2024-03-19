@@ -1,11 +1,11 @@
 .wd-modules-buttons-container {
-    display: flex;
-    justify-content: flex-end;
-    padding-bottom: 10px;
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 10px;
 }
 
 select {
-  font-family: 'FontAwesome';
+  font-family: "FontAwesome";
 }
 
 .wd-buttons {

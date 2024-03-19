@@ -15,7 +15,7 @@ import TodoList from "../a3/todos/TodoList";
 
 const Assignment4 = () => {
   function sayHello() {
-    alert('Hello');
+    alert("Hello");
   }
   return (
     <>

@@ -25,3 +25,7 @@ select {
   display: flex;
   flex-direction: column;
 }
+
+.wd-modules button {
+  border-radius: inherit;
+}

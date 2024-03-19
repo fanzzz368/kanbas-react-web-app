@@ -14,9 +14,9 @@ import { KanbasState } from "../../store";
 
 function ModuleList() {
   const { courseId } = useParams();
-  const moduleList = useSelector((state: KanbasState) => 
+  const moduleList = useSelector((state: KanbasState) =>
     state.modulesReducer.modules);
-  const module = useSelector((state: KanbasState) => 
+  const module = useSelector((state: KanbasState) =>
     state.modulesReducer.module);
   const dispatch = useDispatch();
   return (
@@ -28,75 +28,44 @@ function ModuleList() {
         <button className="wd-buttons module-module-button">+ Module</button>
         <button className="wd-buttons module-ellipsis-button">⋮</button>
       </div>
-      {/* <div> */}
-        <ul className="list-group wd-modules">
+
+      <button className="wd-buttons module-module-button"
+        onClick={() => dispatch(addModule({ ...module, course: courseId }))}>
+        Add
+      </button>
+      <button className="wd-buttons"
+        onClick={() => dispatch(updateModule(module))}>
+        Update
+      </button>
+      <input value={module.name}
+        onChange={(e) =>
+          dispatch(setModule({ ...module, name: e.target.value }))
+        } />
+      <textarea value={module.description}
+        onChange={(e) => dispatch(setModule({ ...module, description: e.target.value }))}
+      />
+
+      <ul className="list-group wd-modules">
         <li className="list-group-item">
-        <button 
-          onClick={() => dispatch(addModule({ ...module, course: courseId }))}>
-          Add
-        </button>
-        <button 
-          onClick={() => dispatch(updateModule(module))}>
-          Update
-        </button>
-        <input value={module.name}
-          onChange={(e) => 
-            dispatch(setModule({ ...module, name: e.target.value }))
-          } />
-        <textarea value={module.description}
-          onChange={(e) => dispatch(setModule({ ...module, description: e.target.value }))}
-        /> 
-         {/* adjust the location of this later */}
-      </li>
-          {moduleList
+        </li>
+        {moduleList
           .filter((module) => module.course === courseId)
           .map((module, index) => (
             <li key={index} className="list-group-item">
-              <button
-                onClick={() => dispatch(deleteModule(module._id))}>
-                Delete
-              </button>
-              <button
-                onClick={() => dispatch(setModule(module))}>
-              Edit
-            </button>
-
-
-              {module.name}
+                {module.name}
+                <button className="wd-buttons module-module-button"
+                  onClick={() => dispatch(setModule(module))}>
+                  Edit
+                </button>
+                <button className="wd-buttons module-module-button"
+                  onClick={() => dispatch(deleteModule(module._id))}>
+                  Delete
+                </button>
               <p>{module.description}</p>
               <p>{module._id}</p>
-              
-              {/* <div className="module-container">
-                <FaEllipsisV className="me-2" />
-                {module.name}
-                <span className="float-end">
-                  <FaCheckCircle className="text-success" />
-                  <FaPlusCircle className="ms-2" />
-                  <FaEllipsisV className="ms-2" />
-                </span>
-              </div> */}
-
-              {/* {selectedModule._id === module._id && (
-                <ul className="list-group">
-                  {module.lessons?.map((lesson) => (
-                    <li className="list-group-item">
-                      <FaEllipsisV className="me-2" />
-                      {lesson.name}
-                      <span className="float-end">
-                        <FaCheckCircle className="text-success" />
-                        <FaEllipsisV className="ms-2" />
-                      </span> */}
-
-
-
-                    </li>
-                  ))}
-                </ul>
-              {/* )} */}
-            {/* </li> */}
-          {/* ))} */}
-        {/* </ul> */}
-      {/* </div> */}
+            </li>
+          ))}
+      </ul>
     </div>
   );
 }

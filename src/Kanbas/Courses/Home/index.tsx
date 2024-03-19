@@ -1,6 +1,6 @@
 import ModuleList from "../Modules/List";
 import Status from "./status";
-import './index.css';
+import "./index.css";
 function Home() {
   return (
     <div className="home">
